@@ -26,9 +26,6 @@ namespace TestClient
             {
                 smtp.Connect("smtp.gmail.com", 465, true);
 
-                // Note: only needed if the SMTP server requires authentication
-                smtp.Authenticate("oluwatobyrichard@gmail.com", "oxbimdawtuolboyp");
-
                 smtp.Send(email);
                 smtp.Disconnect(true);
             }
